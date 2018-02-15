@@ -4,30 +4,26 @@ Please answer the following questions using the git [markdown syntax](https://gu
 
 *put your answer here*
 
-#### (2) What is a better upper bound for the number of possible states taking rotations and reflections into account? Explain your answer.**
+### (2) What is a better upper bound for the number of possible states taking rotations and reflections into account? Explain your answer.**
 
 *put your answer here*
 
-## (3) For a given NxN flipit problem, if a solution is possible, are more than one solutions always possible. Explain your answer.
+### (3) For a given NxN (for N>1) flipit problem, if a solution is possible, are more than one solutions always possible. Explain your answer.
 
 *put your answer here*
 
-## (4) Is every flipit problem on a 2x2 grid solvable?  Explain how you arrived at your answer.
+### (4) Is every flipit problem on a 2x2 grid solvable?  Explain how you arrived at your answer.
 
 *put your answer here*
 
-## (5) Is every flipit action reversable.  That is if performing action A in state S1 yields state S2, will performing action A in state S2 yield S1?
+### (5) Is every flipit action reversible.  That is if performing action A in state S1 yields state S2, will performing action A in state S2 yield S1?
 
 *put your answer here*
 
-## (6) Is every flipit action reversible?  That is if performing action A in state S1 yields state S2, will performing action A in state S2 yield S1?
+### (6) Describe the heuristic you used in your flipit problem in English and say whether or not it is admissible (i.e., does it never overestimate the distance to a goal).
 
 *put your answer here*
 
-## (7) Describe the heuristic you used in your flipit problem in English and say wheter or not it is admissable (i.e., does it never overestiate the distance to a goal).
-
-*put your answer here*
-
-## (8) If your heuristic is not admissable, desceibe an additional one in English and show hoe to comput it in Python.
+### (8) If your heuristic is not admissible, describe an additional one in English and show how to compute it in Python.
 
 
