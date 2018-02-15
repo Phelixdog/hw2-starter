@@ -42,7 +42,7 @@ def show_solution(solution_node, time=0):
         print("Solution of length {} found in {:.4f} seconds".format(len(path) - 1, time), flush=True)
         actions = [None] + solution_node.solution()
         for action, node in zip(actions, path):
-            print("flip {}".format(action) if action else 'initial', flush=True)
+            print("flip {} =>".format(action) if action != None else 'initial', flush=True)
             print_state(node.state)
     else:
         print("No solution found", flush=True)
