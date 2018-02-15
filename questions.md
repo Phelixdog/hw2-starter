@@ -1,6 +1,6 @@
 Please answer the following questions using the git [markdown syntax](https://guides.github.com/features/mastering-markdown/).  You should view this file on your repo on GitHub after pushing it to make sure it looks the way you wanted it to.  You can also use a browser extension (like [this one](https://chrome.google.com/webstore/detail/markdown-preview-plus/febilkbfcbhebfnokafefeacimjdckgl) for Chrome) to view your local file.
 
-###(1) For a square NxN flipit problem, what is a **simple** upper bound on the size of the search space (i.e., number of possible states)?  Explain your answer.**
+### (1) For a square NxN flipit problem, what is a **simple** upper bound on the size of the search space (i.e., number of possible states)?  Explain your answer.**
 
 *put your answer here*
 
