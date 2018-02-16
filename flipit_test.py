@@ -5,8 +5,8 @@ import search
 
 import flipit
 
-tests2 = ['0111', '1100', '0011', '0111', '0001', '0100']
-tests3 = ['110001110', '101010011', '011100010', '100100010', '001110000', '110100010']
+tests2 = [ '0011', '0111', '0001', '0100']
+tests3 = ['011100010', '100100010', '001110000', '110100010']
 tests4 = ['1110110011001000', '0010110011110110', '1101000001111110', '1111111001000010']
 tests5 = ['0000001000101001010001000', '0000001100100100111000111', '0100011110110111010010100', '0000101011111001111110111']
 
@@ -28,18 +28,26 @@ def run_tests():
 
 def flipit_solve(size, initial):
     """ Solve a flip problem and print the result """
-    problem = flipit.FlipIt(size=size, initial=initial)
-    print("Solving {} => {}".format(problem.initial, problem.goal), flush=True)
+    problem =  search.InstrumentedProblem(flipit.FlipIt_optimal(size=size, initial=initial))
+    print("Solving {} => {} optimal".format(problem.initial, problem.goal), flush=True)
     time0 = time.time()
     solution = search.astar_search(problem)
     elapsed = time.time() - time0
-    show_solution(solution, elapsed)
+    show_solution(solution, problem, elapsed)
 
-def show_solution(solution_node, time=0):
+    problem =  search.InstrumentedProblem(flipit.FlipIt_aggressive(size=size, initial=initial))
+    print("Solving {} => {} aggressive".format(problem.initial, problem.goal), flush=True)
+    time0 = time.time()
+    solution = search.astar_search(problem)
+    elapsed = time.time() - time0
+    show_solution(solution, problem, elapsed)
+    
+
+def show_solution(solution_node, ip, time=0):
     """ Print a flipit solution """
     if solution_node:
         path = solution_node.path()
-        print("Solution of length {} found in {:.4f} seconds".format(len(path) - 1, time), flush=True)
+        print("Solution of length {} found after {:.4f} seconds and adding {} states and {} successors".format(len(path) - 1, time, ip.states, ip.succs, flush=True))
         actions = [None] + solution_node.solution()
         for action, node in zip(actions, path):
             print("flip {} =>".format(action) if action != None else 'initial', flush=True)

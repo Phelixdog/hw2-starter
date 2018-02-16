@@ -20,10 +20,11 @@ Please answer the following questions using the git [markdown syntax](https://gu
 
 *put your answer here*
 
-### (6) Describe the heuristic you used in your flipit problem in English and say whether or not it is admissible (i.e., does it never overestimate the distance to a goal).
+### (6) Describe the heuristic you used in your FlipIt_optimal problem in English and explain why it is admissible, i.e., never over-estimates the distance of a state to the nearest goal state.
 
 *put your answer here*
 
-### (8) If your heuristic is not admissible, describe an additional one in English and show how to compute it in Python.
+### (6) Describe the heuristic you used in your FlipIt_aggressive problem in English and explain why it is not admissible, i.e., it sometimes over-estimates the distance of a state to the nearest goal state.
 
 *put your answer here*
+
