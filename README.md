@@ -8,7 +8,7 @@ This short assignment will give you some experience in developing heuristics for
 
 Your task is to use the aima-python search.py package to write a simple system to solve the flipit game using the A* search algorithm. In this game, you are given a NxN grid where each cell holds either a 0 or a 1. If you select a cell, its value "flips" (i.e., changes from from 0 to 1 or vice versa) along with the values of the cells immediately above, below, to the left and to the right. You will be given an initial configuration and must find a sequence of actions to produce a configuration in which all of then cell holds a 0. You will produce two versions, one that uses an admissible heuristic guaranteed to find a shortest solution and another with a more aggressive heuristic that may find a non-optimal solution faster. You must also answer a set of questions about the problem and your solutions.
 
-### 2. preliminaries
+### 2. Preliminaries
 
 Start by cloning the aima python code and take a brief look at it. Then study the aima search.py file. You should look at the Problem class and its methods, in particular, and the search algorithms. Note that this code only works in Python3. You can find information here on how to use Python3 on gl.
 
@@ -43,7 +43,7 @@ The optimal heuristic should be one that depends on the state (use node.state to
 
 Once you've written your code you can execute the python file flipit_test.py, which will try your solution for several test cases of size 2, 3, 4 and 5. You can see the results that our model solution generates for this test file in flipit_test.out. While your answers might differ from the ones we've given, they should be similar. Our model solution uses use an admissible heuristic, so the lengths of the solutions fund are the shortest ones possible. Do check your answers to see if they make sense. 
 
-### 5. some questions to answer
+### 5. Some questions to answer
 
 Complete your copy of the file questions.md by answering each of the questions.
 
