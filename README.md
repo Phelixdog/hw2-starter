@@ -41,7 +41,7 @@ The optimal heuristic should be one that depends on the state (use node.state to
 
 ### 4. Testing your code
 
-Once you've written your code you can execute the python file flipit_test.py, which will try your solution for several test cases of size 2, 3, 4 and 5. You can see the results that our model solution generates for this test file in flipit_test.out. While your answers might differ from the ones we've given, they should be similar. Our model solution uses use an admissible heuristic, so the lengths of the solutions fund are the shortest ones possible. Do check your answers to see if they make sense. 
+Once you've written your code you can execute the python file flipit_test.py, which will try your solution for several test cases of size 2, 3, 4 and 5. You can see the results that our model solution generates for this test file in sample_output.txt. While your answers might differ from the ones we've given, they should be similar. Our model solution uses use an admissible heuristic, so the lengths of the solutions fund are the shortest ones possible. Do check your answers to see if they make sense. 
 
 ### 5. Some questions to answer
 
